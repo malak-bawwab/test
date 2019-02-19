@@ -1,0 +1,29 @@
+                                                                          
+<project default="compile">
+       <property name="src.java.dir" location="./src/hw/java/converter"/> 
+                    <property name="src.test.dir" location="./src/hw/test"/> 
+             <property name="result.dir" location="./target"/> 
+                    <property name="result.javaclasses.dir" location="${result.dir}/classes"/> 
+                    <property name="result.testclasses.dir" location="${result.dir}/testclasses"/> 
+             <property name="result.jar.file" location="./MyProduct.jar"/> 
+                                                                         
+                                                                         <target name="compile">
+                                                                                               <mkdir dir="${result.javaclasses.dir}"/>
+                    <javac srcdir="${src.java.dir}" destdir="${result.javaclasses.dir}" debug="true" includeantruntime="false" classpath="C:\Users\hp\eclipse-workspace\malak\UsedLibraries\junit-4.12.jar">
+                                                                                                                              </javac>
+                                                                                                                              </target>
+  
+                                                                           <target name="jar" depends="compile">
+                                                                             <jar destfile="${result.jar.file}">
+                                                                               <fileset dir="${result.javaclasses.dir}">
+                                                                               </fileset>
+                                                                             </jar>
+                                                                           	
+                                                                           	
+                                                                           	
+                                                                                    
+  </target>
+
+
+	
+</project>
