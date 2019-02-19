@@ -5,7 +5,7 @@ public class SC {
 
 
 
-public ArrayList<product>pro=new  ArrayList();
+public ArrayList<product>pro=new  ArrayList<product>();
 
 	public int getcount() {
 		// TODO Auto-generated method stub
